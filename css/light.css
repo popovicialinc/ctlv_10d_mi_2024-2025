@@ -197,11 +197,10 @@ p a { /* Linkuri continute in paragrafe */
 }
 
 /* Meniu dropdown */
-/* FAQ */
 details {
     margin: 15px;
     overflow: hidden;
-    transition: height 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 summary {
@@ -218,34 +217,21 @@ summary {
 }
 
 details[open] summary ~ * {
-    animation: open 0.3s ease-in-out;
+    animation: open 0.3s ease-in-out forwards;
 }
 
-details:not([open]) summary ~ * {
-    animation: close 0.3s ease-in-out;
-}
-
-details[open] summary ~ #socialmedia_link {
-    animation: open 0.3s ease-in-out;
+details.closing summary ~ * {
+    animation: close 0.3s ease-in-out forwards;
 }
 
 @keyframes open {
     from {
-        margin-top: -10px;
+        margin-top: 0px;
         opacity: 0;
     }
     to {
+        margin-top: 10px;
         opacity: 1;
-    }
-}
-
-@keyframes close {
-    from {
-        opacity: 1;
-    }
-    to {
-        margin-top: -10px;
-        opacity: 0;
     }
 }
 
