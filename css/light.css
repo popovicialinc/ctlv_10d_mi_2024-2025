@@ -1,0 +1,274 @@
+/* NECLASIFICAT */
+.custom-transition {
+    transition: 0.3s;
+}
+
+
+#continut_configurari {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 2em;
+    margin: 25px 5vw 25px 5vw;
+    padding: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#theme-toggle {
+    transition: 0.3s;
+    background-color: rgba(72, 149, 239, 1);
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(72, 149, 239, 1);
+    border: none;
+    border-radius: 2em;
+}
+
+#theme-toggle:hover {
+    transform: scale(0.95);
+    background-color: rgba(72, 150, 239, 1);
+}
+
+#theme-toggle:active {
+    transform: scale(0.9);
+    background-color: rgba(100, 149, 237, 0.7);
+}
+
+::marker {
+    color: rgba(72, 149, 239, 1);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+/* UNIVERSAL */
+body {
+    background-color: #dee2e6;
+    transition: color 0.3s;
+    margin: 0;
+    margin-top: 80px;
+}
+
+/* Scrollbar modificat*/
+::-webkit-scrollbar {
+    transition: 0.3s;
+    background: white;
+    width: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    transition: 0.3s;
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    transition: 0.3s;
+    border-radius: 2em;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    transition: 0.3s;
+    background-color: #a8bbbf;
+}
+
+
+
+
+
+
+
+/* STILURI DE SCRIERE */
+#titlu { /* Titlul paginii*/
+    font-family: "Quicksand";
+    font-size: clamp(1rem, 15vw, 7rem);
+    font-weight: 900;
+    transition: all 0.3s;
+    text-shadow: 5px 5px 10px gray;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Quicksand";
+    font-size: clamp(32px, 3vw, 48px);
+    margin: 15px;
+    text-align: left;
+}
+
+h2 {
+    text-decoration: underline 3px black; 
+    text-align: center;
+    
+}
+
+p { /* Paragraf / Continut */
+    color: black;
+    font-family: "Quicksand";
+    font-size: clamp(18px, 3vw, 28px);
+    margin: 15px;
+    transition: 0.3s;
+}
+
+p a { /* Linkuri continute in paragrafe */
+    color: rgba(72, 149, 239, 1);
+
+}
+
+
+
+
+
+/* BARA DE NAVIGARE */
+#navigare {
+    /* Stil */
+        font-family: "Quicksand";
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 0 0 2em 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 1px -1px 26px 12px rgba(72, 149, 239, 1);
+
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+
+    /* Transform*/
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 4em;
+}
+
+#linkuri {
+    /* Stil */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    /* Transform */
+        margin: 0;
+}
+
+#linkuri a {
+    /* Stil */
+        font-size: clamp(1rem, 1vw, 3rem);
+        color: black;
+        background-color: rgba(100, 149, 237, 0.5);
+        text-decoration: none;
+        border-radius: 2em;
+        transition: all 0.3s;
+        transition-property: font-size, color, background-color;
+
+    /* Transform */
+        margin: 0 15px;
+        padding: 10px;
+}
+
+#linkuri a:hover {
+    /* Stil */
+        background-color: rgba(100, 149, 237, 0.7);
+        font-weight: 900;
+}
+
+
+
+
+
+
+/* CONTINUT */
+#continut {
+    /* Stil */
+        
+        box-shadow: 5px 5px 10px gray;
+        border-radius: 2em;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    /* Transform*/
+        margin: 25px 5vw 25px 5vw;
+        padding: 10px;
+}
+
+/* Meniu dropdown */
+/* FAQ */
+details {
+    margin: 15px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+summary {
+    color: black;
+    font-family: "Quicksand";
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 900;
+    border-bottom: 2px solid #999999;
+    cursor: pointer;
+}
+
+#sub-details {
+    margin-right: 0;
+}
+
+details[open] summary ~ * {
+    animation: open 0.3s ease-in-out;
+}
+
+details:not([open]) summary ~ * {
+    animation: close 0.3s ease-in-out;
+}
+
+details[open] summary ~ #socialmedia_link {
+    animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+    from {
+        margin-top: -10px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes close {
+    from {
+        opacity: 1;
+    }
+    to {
+        margin-top: -10px;
+        opacity: 0;
+    }
+}
+
+
+
+/* TELEFON */
+@media screen and (max-width: 600px) {
+    #navigare {
+        justify-content: center;
+        width: 100%;
+        transition: all 0.3;
+        height: 45px;
+    }
+
+    body {
+        margin-top: 70px;
+    }
+
+    #continut {
+        display: block;
+    }
+
+    #socialmedia_link {
+        width: 75px;
+    }
+}
