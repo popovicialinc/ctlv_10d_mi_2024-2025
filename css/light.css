@@ -3,7 +3,6 @@
     transition: 0.3s;
 }
 
-
 #continut_configurari {
     display: flex;
     flex-direction: column;
@@ -12,9 +11,15 @@
     margin: 25px 5vw 25px 5vw;
     padding: 10px;
     box-shadow: 5px 5px 10px gray;
+    transition: 3s;
+}
+
+#details_despre {
+    text-decoration: underline 3px black; 
 }
 
 #theme-toggle {
+    transform: scale(0.95);
     transition: 0.3s;
     background-color: rgba(72, 149, 239, 1);
     height: 50px;
@@ -25,12 +30,12 @@
 }
 
 #theme-toggle:hover {
-    transform: scale(0.95);
+    transform: scale(0.9);
     background-color: rgba(72, 150, 239, 1);
 }
 
 #theme-toggle:active {
-    transform: scale(0.9);
+    transform: scale(0.85);
     background-color: rgba(100, 149, 237, 0.7);
 }
 
@@ -46,7 +51,8 @@
 
 /* UNIVERSAL */
 body {
-    background-color: #dee2e6;
+    background-image: url(data:image/png;base64,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);
+    background-color: #f2faff;
     transition: color 0.3s;
     margin: 0;
     margin-top: 80px;
@@ -85,12 +91,26 @@ body {
 
 /* STILURI DE SCRIERE */
 #titlu { /* Titlul paginii*/
-    font-family: "Quicksand";
-    font-size: clamp(1rem, 15vw, 7rem);
+    font-family: "Parisienne";
+    font-size: clamp(1rem, 20vw, 8rem);
     font-weight: 900;
     transition: all 0.3s;
     text-shadow: 5px 5px 10px gray;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before, &:after {
+        content: '';
+        display: block;
+        margin: 0 3rem;
+        flex: 1;
+        border-bottom: 5px solid rgba(72, 149, 239, 0.5);
+        border-radius: 2em;
+    }
+
 }
 
 h1 {
@@ -103,7 +123,6 @@ h1 {
 h2 {
     text-decoration: underline 3px black; 
     text-align: center;
-    
 }
 
 p { /* Paragraf / Continut */
@@ -127,7 +146,7 @@ p a { /* Linkuri continute in paragrafe */
 #navigare {
     /* Stil */
         font-family: "Quicksand";
-        background: rgba(255, 255, 255, 0.8);
+        background: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(10px);
         border-radius: 0 0 2em 2em;
         display: flex;
@@ -144,6 +163,7 @@ p a { /* Linkuri continute in paragrafe */
         width: 100%;
         top: 0;
         height: 4em;
+        z-index: 9999;
 }
 
 #linkuri {
@@ -185,22 +205,47 @@ p a { /* Linkuri continute in paragrafe */
 /* CONTINUT */
 #continut {
     /* Stil */
-        
         box-shadow: 5px 5px 10px gray;
         border-radius: 2em;
         display: flex;
         flex-direction: column;
-        background-color: white;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s;
     /* Transform*/
         margin: 25px 5vw 25px 5vw;
         padding: 10px;
 }
 
 /* Meniu dropdown */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 details {
     margin: 15px;
     overflow: hidden;
     transition: all 0.3s ease;
+}
+
+#details_despre {
+    text-decoration: solid black 2px;
 }
 
 summary {
@@ -220,7 +265,7 @@ details[open] summary ~ * {
     animation: open 0.3s ease-in-out forwards;
 }
 
-details.closing summary ~ * {
+details[close] summary ~ * {
     animation: close 0.3s ease-in-out forwards;
 }
 
@@ -235,6 +280,17 @@ details.closing summary ~ * {
     }
 }
 
+@keyframes close {
+    from {
+        margin-top: 10px;
+        opacity: 1;
+    }
+    to {
+        margin-top: 0px;
+        opacity: 0;
+    }
+}
+
 
 
 /* TELEFON */
@@ -243,18 +299,29 @@ details.closing summary ~ * {
         justify-content: center;
         width: 100%;
         transition: all 0.3;
-        height: 45px;
+        height: 65px;
+        box-shadow: 1px -1px 26px 12px rgba(72, 149, 239, 0.7);
     }
 
     body {
-        margin-top: 70px;
+        margin-top: calc(30px + 65px) ;
+    }
+
+    #titlu {
+        padding: 0;
+        margin: -15 0;
+        &:before, &:after {
+            content: '';
+            display: block;
+            margin: 0 1rem;
+            flex: 1;
+            border-bottom: 5px solid rgba(72, 149, 239, 0.5);
+            border-radius: 2em;
+        }
     }
 
     #continut {
-        display: block;
-    }
-
-    #socialmedia_link {
-        width: 75px;
+        padding: 5px;
+        margin: 15px 5vw 15px 5vw;
     }
 }
