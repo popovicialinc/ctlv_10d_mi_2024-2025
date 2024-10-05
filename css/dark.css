@@ -140,6 +140,14 @@ p a { /* Linkuri continute in paragrafe */
 
 }
 
+#margin0sj {
+    color: white;
+    font-family: "Quicksand";
+    font-size: clamp(18px, 3vw, 28px);
+    margin: 0 15px 30px 15px;
+    transition: 0.3s;
+}
+
 
 
 

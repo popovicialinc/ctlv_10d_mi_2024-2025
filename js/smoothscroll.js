@@ -1,5 +1,3 @@
-// Cod luat de pe "luminateos.com"
-
 (function() {
     function C() {
         if (!D && document.body) {
