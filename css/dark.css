@@ -215,6 +215,8 @@ p a { /* Linkuri continute in paragrafe */
 /* CONTINUT */
 #continut {
     /* Stil */
+        box-shadow: 5px 5px 10px rgba(100, 149, 237, 0.5);
+        outline: solid 3px rgba(100, 149, 237, 0.25);
         border-radius: 2em;
         display: flex;
         flex-direction: column;
@@ -234,7 +236,7 @@ details {
 }
 
 #details_despre {
-    text-decoration: solid black 2px;
+    text-decoration: underline white 3px;
 }
 
 summary {
