@@ -82,6 +82,28 @@ body {
     background-color: rgb(82, 99, 114);
 }
 
+#p_rosu {
+    color: red;
+}
+
+#social_media {
+    display: flex;
+    width: 100%;
+    padding: 0 10px 10px 10px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#social_media img {
+    color: #f00;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    margin: 0 5px;
+    padding: 5px;
+    width: 3vw;
+    transition: 0.3s;
+}
+
 
 
 

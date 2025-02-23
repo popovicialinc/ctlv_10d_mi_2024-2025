@@ -44,6 +44,26 @@
     transition: 0.3s;
 }
 
+#p_rosu {
+    color: red;
+}
+
+#social_media {
+    display: flex;
+    width: 100%;
+    padding: 0 10px 10px 10px;
+    align-items: center;
+    transition: 0.3s;
+    
+}
+
+#social_media img {
+    color: #f00;
+    margin: 0 5px;
+    padding: 5px;
+    width: 3vw;
+    transition: 0.3s;
+}
 
 
 
