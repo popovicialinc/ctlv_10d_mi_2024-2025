@@ -91,6 +91,8 @@ body {
     width: 100%;
     padding: 0 10px 10px 10px;
     align-items: center;
+    align-content: center;
+    justify-content: center;
     transition: 0.3s;
 }
 
@@ -100,7 +102,7 @@ body {
     filter: invert(100%);
     margin: 0 5px;
     padding: 5px;
-    width: 3vw;
+    width: 5vw;
     transition: 0.3s;
 }
 
@@ -185,6 +187,7 @@ p a { /* Linkuri continute in paragrafe */
         justify-content: center;
         align-items: center;
         box-shadow: 1px -1px 26px 12px rgba(72, 149, 239, 1);
+        outline: solid 1px rgba(100, 149, 237, 0.5);
 
         -webkit-user-select: none; /* Safari */
         -ms-user-select: none; /* IE 10 and IE 11 */
@@ -266,7 +269,7 @@ summary {
     font-family: "Quicksand";
     font-size: clamp(24px, 3vw, 36px);
     font-weight: 900;
-    border-bottom: 2px solid #999999;
+    border-bottom: 2px solid rgba(100, 149, 237, 0.5);
     cursor: pointer;
 }
 
@@ -312,7 +315,7 @@ details[close] summary ~ * {
         justify-content: center;
         width: 100%;
         transition: all 0.3;
-        height: 65px;
+        height: 40px;
         box-shadow: 1px -1px 26px 12px rgba(72, 149, 239, 0.7);
     }
 
@@ -336,5 +339,18 @@ details[close] summary ~ * {
     #continut {
         padding: 5px;
         margin: 15px 5vw 15px 5vw;
+    }
+
+    #linkuri a {
+            margin: 0 5px;
+            padding: 3px 10px;
+    }
+
+    #social_media {
+        padding: 0 0 5px 0!important;
+    }
+
+    #social_media img {
+        width: 7vw;
     }
 }
